@@ -3,9 +3,9 @@ import { useHistory } from 'react-router';
 import './Country.css';
 
 const Country = (props) => {
-    const history = useHistory();
     const { name, capital, area, population, region, flag } = props.country;
 
+    const history = useHistory();
     const handleClick = countryName => {
         history.push(`/country/${countryName}`);
     }

@@ -3,9 +3,9 @@ import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 
 const CountryDetails = () => {
-    const { countryName } = useParams();
-
     const [country, setCountry] = useState({});
+
+    const { countryName } = useParams();
     useEffect(() => {
         fetch(`https://restcountries.eu/rest/v2/name/${countryName}`)
             .then(res => res.json())
@@ -68,7 +68,7 @@ const CountryDetails = () => {
             </div>
             <div className="text-center">
                 <Link to="/home">
-                    <button type="button" className="btn btn-danger px-4 py-2">Back</button>
+                    <button type="button" className="btn btn-danger px-4 py-2">Back to Home</button>
                 </Link>
             </div>
         </>
