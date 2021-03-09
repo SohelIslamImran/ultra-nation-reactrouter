@@ -15,7 +15,7 @@ const Search = () => {
 
     return (
         <div className="container mt-5">
-            <div className="row row-cols-xxl-6 row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-2 g-4">
+            <div className="row row-cols-xxl-6 row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 g-4 justify-content-center">
                 {
                     search ? <Country key={search.numericCode} country={search} /> : <NotFound />
                 }

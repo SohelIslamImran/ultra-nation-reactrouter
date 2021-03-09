@@ -16,7 +16,7 @@ const CountryDetails = () => {
 
     return (
         <>
-            <div className="card my-4 mx-2 shadow" style={{ maxWidth: "540px", margin: "auto" }}>
+            <div className="card my-4 shadow" style={{ maxWidth: "540px", margin: "auto" }}>
                 <img src={flag} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h3 className="card-title text-center">{name}</h3>
